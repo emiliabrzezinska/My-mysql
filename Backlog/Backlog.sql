@@ -14,4 +14,4 @@ USE Library_EmiliaB;
 
 INSERT INTO Employees (name, salary, bank_account_number, national_insurance_number) VALUES
 ('John Marsch', 50000.00, '1234567899', 'NI1234567');
-INSERT INTO SalesEmp (semp_id, commission_rate) VALUES (3, 0.38);
+INSERT INTO SalesEmp (semp_id, commission_rate) VALUES (2, 0.38);
