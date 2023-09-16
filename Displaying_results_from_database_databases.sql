@@ -23,6 +23,19 @@ ALTER TABLE Customer MODIFY CustomerID int AUTO_INCREMENT;
 
 SHOW CREATE TABLE Customer;
 
+-- duspatchdate - nazwa tabeli oznaczajaca date wysylki
+
+CREATE TABLE `Order` (
+OrderID int PRIMARY KEY AUTO_INCREMENT,
+CustomerID int,
+DispachtDate DATETIME
+);
+
+
+INSERT INTO Customer (Name, Address, Phone)
+VALUES ('Second Customer', '29 Trigonometry Street, Algebra', '0774 123456');
+
+
 
 
 
