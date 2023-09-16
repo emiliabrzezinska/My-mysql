@@ -48,8 +48,14 @@ DEFAULT CURRENT_TIMESTAMP;
 CREATE TABLE Product (
 ProductID int PRIMARY KEY AUTO_INCREMENT,
 Name varchar(50),
-Description decimal(11,2)
+Description varchar(500),
+Price decimal(11,2)
 );
+
+
+
+
+DROP TABLE Product;
 
 ALTER TABLE Product
 ADD COLUMN OrderDate TIMESTAMP;
@@ -57,3 +63,11 @@ ADD COLUMN OrderDate TIMESTAMP;
 ALTER TABLE Product
 MODIFY COLUMN OrderDate TIMESTAMP
 DEFAULT CURRENT_TIMESTAMP;
+
+INSERT INTO Product (Name, Description, Price)
+VALUES ('Heater', 'Heats up the room real quick', '499,99');
+
+
+-- to zapytanie sprawdza po wierszach wiec lepiej jest sprawdzac po kolumnach, 
+-- w tym celu nalezy utworzyc index w kolumnie np indeks w kolumnie nazwa
+EXPLAIN SELECT NAME FROM Product where name= 'Heater';
