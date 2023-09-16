@@ -38,6 +38,12 @@ VALUES ('Second Customer', '29 Trigonometry Street, Algebra', '0774 123456');
 
 ALTER TABLE `Order`
 ADD COLUMN OrderDate TIMESTAMP;
+-- mozna dodac AFTER CustomerID zeby kolumna utworzyla sie po kolumnie CustomerID;
+
+-- DEFAULT CURRENT_TIMESTAMP, to ustawienie pozwala na to by wartosc byla aktualizowana po wtworzeniu wiersza
+ALTER TABLE `Order`
+MODIFY COLUMN OrderDate TIMESTAMP
+DEFAULT CURRENT_TIMESTAMP;
 
 
 
