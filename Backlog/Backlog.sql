@@ -1,17 +1,9 @@
 USE Library_EmiliaB;
 
--- chce miec mozliwosc stworzenia pracownika sprzedazy. 
--- Powinien moc przechowuwac imie nazwisko, wynagrodzenie, numer konta bankowego,
--- numer ubezpieczenia spolecznego i stawke prowizji.
+-- jako czlonek zespolu sprzedazy chce miec mozliwosc stworzenia nowego klienta.
+-- powinien moc zapisac imie i nazwisko, adres i numer telefonu
+-- z tego co rozumiem to poniewaz stworzylismy trzy tabele: employees, deloivery i sales
+-- musimy teraz przy tworzneiu nowego klienta podac id pracownika sprzedazy, ktory
+-- utowrzyl nowego klienta w bazie
 
--- jest to realacja IS-A
--- imie, nazwisko, wynagrodzenie, numer konta bankowego, numer ubezpieczenia sa czesciami wspolymi z DeliveryEmp
--- dlatego mamy tabele Employee ktora jest glowna i dwie osobe czyli Sales i Delivery
-
--- tzreba pamietac ze jezeli mam 5 pracownikow w Employee i chce dodac do sales prowizje
--- to ten pracownik musi istniec w employee, czyli do id4 moge dodac prowizje, do 6 nie bo nie ma takiego
--- wiec prowizje moge dodac tylko tam gdzie gdzie istnieje pracownik i nie ma jescze dodanej prowizji 
-
-INSERT INTO Employees (name, salary, bank_account_number, national_insurance_number) VALUES
-('John Marsch', 50000.00, '1234567899', 'NI1234567');
-INSERT INTO SalesEmp (semp_id, commission_rate) VALUES (2, 0.38);
+INSERT INTO Clients  (name, adress, phone, semp_id ) VALUES ('Joanna Allen', 'Alben 123', '1412122225', 1);
