@@ -36,6 +36,8 @@ INSERT INTO Customer (Name, Address, Phone)
 VALUES ('Second Customer', '29 Trigonometry Street, Algebra', '0774 123456');
 
 
+ALTER TABLE `Order`
+ADD COLUMN OrderDate TIMESTAMP;
 
 
 
