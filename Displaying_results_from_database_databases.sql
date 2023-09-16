@@ -71,3 +71,5 @@ VALUES ('Heater', 'Heats up the room real quick', '499,99');
 -- to zapytanie sprawdza po wierszach wiec lepiej jest sprawdzac po kolumnach, 
 -- w tym celu nalezy utworzyc index w kolumnie np indeks w kolumnie nazwa
 EXPLAIN SELECT NAME FROM Product where name= 'Heater';
+
+CREATE INDEX product_name on Product(Name);
