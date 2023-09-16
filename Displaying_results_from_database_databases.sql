@@ -1,15 +1,16 @@
 
 
-SHOW DATABASES;
+USE Library_EmiliaB;
 
-USE pubs;
+CREATE TABLE Customer (
+CustomerID int,
+Name varchar(70),
+Address varchar(200),
+Phone varchar(64)
+);
 
 
-SHOW TABLES;
 
-SELECT * from Customer;
-
-SELECT * from authors;
 
 
 
