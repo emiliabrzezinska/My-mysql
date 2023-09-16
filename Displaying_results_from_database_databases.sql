@@ -12,7 +12,11 @@ Phone varchar(64)
 
 DESCRIBE Customer;
 
--- widzimy szczegóły, również typy użytych danych
+ALTER TABLE Customer
+ADD PRIMARY KEY(CustomerID);
+
+DESCRIBE Customer;
+
 
 
 
