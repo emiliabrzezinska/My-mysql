@@ -2,10 +2,14 @@
 
 SHOW DATABASES;
 
-USE Library_EmiliaB;
+USE pubs;
+
 
 SHOW TABLES;
 
+SELECT * from Customer;
+
+SELECT * from authors;
 
 
 
