@@ -10,6 +10,9 @@ Phone varchar(64)
 );
 
 
+DESCRIBE Customer;
+
+-- widzimy szczegóły, również typy użytych danych
 
 
 
